@@ -221,12 +221,13 @@
   }
   .client-chip{
     background:var(--panel); border:1px solid var(--line); border-radius:12px;
-    padding:20px 22px; text-align:center; flex-shrink:0; width:180px;
+    padding:20px 18px; text-align:center; flex-shrink:0; width:180px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
     transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
   }
   .client-chip:hover{transform:translateY(-4px); border-color:var(--orange); box-shadow:0 14px 28px rgba(7,7,44,0.07);}
-  .client-chip .mark{width:38px; height:38px; margin:0 auto 12px; border-radius:10px; background:var(--cream-alt); color:var(--orange-dark); display:flex; align-items:center; justify-content:center; font-family:'Poppins',sans-serif; font-weight:800; font-size:1rem;}
-  .client-chip span{font-size:0.85rem; font-weight:600; color:var(--navy); display:block;}
+  .client-chip img{height:52px; width:auto; max-width:100%; object-fit:contain; margin-bottom:12px;}
+  .client-chip span{font-size:0.78rem; font-weight:600; color:var(--navy); display:block; line-height:1.3;}
   @media (prefers-reduced-motion: reduce){ .clients-track{animation:none;} }
   .clients-note{max-width:640px; margin:34px auto 0; text-align:center; color:var(--muted); font-size:0.88rem; background:var(--cream-alt); border:1px dashed var(--orange); border-radius:12px; padding:16px 20px;}
 
@@ -462,50 +463,50 @@
     <div class="clients-marquee reveal">
       <div class="clients-track" id="clientsTrack">
         <!-- set 1 -->
-        <div class="client-chip"><div class="mark">P</div><span>Periyasamy</span></div>
-        <div class="client-chip"><div class="mark">TB</div><span>Thoppivappa Biriyani</span></div>
-        <div class="client-chip"><div class="mark">SS</div><span>SS Chicken</span></div>
-        <div class="client-chip"><div class="mark">VP</div><span>Vasandham Priya Jwellry</span></div>
-        <div class="client-chip"><div class="mark">NE</div><span>Niyaaz Enterprises</span></div>
-        <div class="client-chip"><div class="mark">PP</div><span>Pavan Pipes Corporation</span></div>
-        <div class="client-chip"><div class="mark">II</div><span>Indian Imperial</span></div>
-        <div class="client-chip"><div class="mark">BD</div><span>Banu Dental Clinic</span></div>
-        <div class="client-chip"><div class="mark">KP</div><span>Karthik Physiotherapy</span></div>
-        <div class="client-chip"><div class="mark">DF</div><span>Dheen Food Court</span></div>
-        <div class="client-chip"><div class="mark">CI</div><span>Champion Icecreams</span></div>
-        <div class="client-chip"><div class="mark">VT</div><span>Vijayalakshmi Traders</span></div>
-        <div class="client-chip"><div class="mark">LB</div><span>Lee Benz ARK Hotel</span></div>
-        <div class="client-chip"><div class="mark">AH</div><span>Auricle Hearing Aid</span></div>
-        <div class="client-chip"><div class="mark">MR</div><span>MR Millennium</span></div>
-        <div class="client-chip"><div class="mark">AD</div><span>Apollo Dental</span></div>
-        <div class="client-chip"><div class="mark">MC</div><span>Muthu Cycle Mart</span></div>
-        <div class="client-chip"><div class="mark">RS</div><span>RS Roasted Gram Mill</span></div>
-        <div class="client-chip"><div class="mark">VJ</div><span>Valli Jwellry</span></div>
-        <div class="client-chip"><div class="mark">AM</div><span>Amutham Metro Mart</span></div>
+        <div class="client-chip"><img src="logos/bdc.png" alt="BDC Dental Care logo" loading="lazy"><span>BDC Dental Care</span></div>
+        <div class="client-chip"><img src="logos/champion-icecreams.png" alt="Champion Ice Creams logo" loading="lazy"><span>Champion Ice Creams</span></div>
+        <div class="client-chip"><img src="logos/bg.png" alt="BG logo" loading="lazy"><span>BG</span></div>
+        <div class="client-chip"><img src="logos/bathos.png" alt="Bathos logo" loading="lazy"><span>Bathos</span></div>
+        <div class="client-chip"><img src="logos/deen-food-court.png" alt="Deen Food Court logo" loading="lazy"><span>Deen Food Court</span></div>
+        <div class="client-chip"><img src="logos/amudham-metro-mart.png" alt="Amudham Metro Mart logo" loading="lazy"><span>Amudham Metro Mart</span></div>
+        <div class="client-chip"><img src="logos/indian-imperial.png" alt="Indian Imperial logo" loading="lazy"><span>Indian Imperial</span></div>
+        <div class="client-chip"><img src="logos/golden-traders.png" alt="Golden Traders logo" loading="lazy"><span>Golden Traders</span></div>
+        <div class="client-chip"><img src="logos/guru.png" alt="Guru logo" loading="lazy"><span>Guru</span></div>
+        <div class="client-chip"><img src="logos/skc-sri-karthick-care.png" alt="Sri Karthick Care logo" loading="lazy"><span>Sri Karthick Care</span></div>
+        <div class="client-chip"><img src="logos/karunya.png" alt="Karunya logo" loading="lazy"><span>Karunya</span></div>
+        <div class="client-chip"><img src="logos/mr-millennium-electronics.png" alt="Mr. Millennium Electronics logo" loading="lazy"><span>Mr. Millennium Electronics</span></div>
+        <div class="client-chip"><img src="logos/muthu-cycle-stores.png" alt="Muthu Cycle Stores logo" loading="lazy"><span>Muthu Cycle Stores</span></div>
+        <div class="client-chip"><img src="logos/niyaaz-enterprises.png" alt="Niyaaz Enterprises logo" loading="lazy"><span>Niyaaz Enterprises</span></div>
+        <div class="client-chip"><img src="logos/pavan-pipe-corporation.png" alt="Pavan Pipe Corporation logo" loading="lazy"><span>Pavan Pipe Corporation</span></div>
+        <div class="client-chip"><img src="logos/rsr.png" alt="RSR logo" loading="lazy"><span>RSR</span></div>
+        <div class="client-chip"><img src="logos/satheesh-hearing-aid.png" alt="Satheesh Hearing Aid logo" loading="lazy"><span>Satheesh Hearing Aid</span></div>
+        <div class="client-chip"><img src="logos/shiva-steel-company.png" alt="Shiva Steel Company logo" loading="lazy"><span>Shiva Steel Company</span></div>
+        <div class="client-chip"><img src="logos/muthu-groups.png" alt="Muthu Groups logo" loading="lazy"><span>Muthu Groups</span></div>
+        <div class="client-chip"><img src="logos/anugragha-builders.png" alt="Anugragha Builders logo" loading="lazy"><span>Anugragha Builders</span></div>
         <!-- set 2 (duplicate for a seamless loop) -->
-        <div class="client-chip" aria-hidden="true"><div class="mark">P</div><span>Periyasamy</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">TB</div><span>Thoppivappa Biriyani</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">SS</div><span>SS Chicken</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">VP</div><span>Vasandham Priya Jwellry</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">NE</div><span>Niyaaz Enterprises</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">PP</div><span>Pavan Pipes Corporation</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">II</div><span>Indian Imperial</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">BD</div><span>Banu Dental Clinic</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">KP</div><span>Karthik Physiotherapy</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">DF</div><span>Dheen Food Court</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">CI</div><span>Champion Icecreams</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">VT</div><span>Vijayalakshmi Traders</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">LB</div><span>Lee Benz ARK Hotel</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">AH</div><span>Auricle Hearing Aid</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">MR</div><span>MR Millennium</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">AD</div><span>Apollo Dental</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">MC</div><span>Muthu Cycle Mart</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">RS</div><span>RS Roasted Gram Mill</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">VJ</div><span>Valli Jwellry</span></div>
-        <div class="client-chip" aria-hidden="true"><div class="mark">AM</div><span>Amutham Metro Mart</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/bdc.png" alt="BDC Dental Care logo" loading="lazy"><span>BDC Dental Care</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/champion-icecreams.png" alt="Champion Ice Creams logo" loading="lazy"><span>Champion Ice Creams</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/bg.png" alt="BG logo" loading="lazy"><span>BG</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/bathos.png" alt="Bathos logo" loading="lazy"><span>Bathos</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/deen-food-court.png" alt="Deen Food Court logo" loading="lazy"><span>Deen Food Court</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/amudham-metro-mart.png" alt="Amudham Metro Mart logo" loading="lazy"><span>Amudham Metro Mart</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/indian-imperial.png" alt="Indian Imperial logo" loading="lazy"><span>Indian Imperial</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/golden-traders.png" alt="Golden Traders logo" loading="lazy"><span>Golden Traders</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/guru.png" alt="Guru logo" loading="lazy"><span>Guru</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/skc-sri-karthick-care.png" alt="Sri Karthick Care logo" loading="lazy"><span>Sri Karthick Care</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/karunya.png" alt="Karunya logo" loading="lazy"><span>Karunya</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/mr-millennium-electronics.png" alt="Mr. Millennium Electronics logo" loading="lazy"><span>Mr. Millennium Electronics</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/muthu-cycle-stores.png" alt="Muthu Cycle Stores logo" loading="lazy"><span>Muthu Cycle Stores</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/niyaaz-enterprises.png" alt="Niyaaz Enterprises logo" loading="lazy"><span>Niyaaz Enterprises</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/pavan-pipe-corporation.png" alt="Pavan Pipe Corporation logo" loading="lazy"><span>Pavan Pipe Corporation</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/rsr.png" alt="RSR logo" loading="lazy"><span>RSR</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/satheesh-hearing-aid.png" alt="Satheesh Hearing Aid logo" loading="lazy"><span>Satheesh Hearing Aid</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/shiva-steel-company.png" alt="Shiva Steel Company logo" loading="lazy"><span>Shiva Steel Company</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/muthu-groups.png" alt="Muthu Groups logo" loading="lazy"><span>Muthu Groups</span></div>
+        <div class="client-chip" aria-hidden="true"><img src="logos/anugragha-builders.png" alt="Anugragha Builders logo" loading="lazy"><span>Anugragha Builders</span></div>
       </div>
     </div>
-    <p class="clients-note reveal">These are shown as name badges for now, scrolling continuously like a marquee. Send over the actual logo files for these clients (the ones you have rights to use) and I'll swap them in as real logos.</p>
+    <p class="clients-note reveal">Real client logos, on a continuous scroll. Send more anytime and I'll add them to the strip.</p>
   </div>
 </section>
 
@@ -545,7 +546,7 @@
       <div class="contact-card reveal">
         <h4>Get In Touch</h4>
         <p class="sub">Fill out the form and the team gets back to you within 24 hours.</p>
-        <form action="https://formsubmit.co/jamdigisoluiton@gmail.com" method="POST">
+        <form onsubmit="return false;">
           <div class="form-row">
             <div><label for="fname">Name</label><input id="fname" type="text" placeholder="Your name" required></div>
             <div><label for="fphone">Phone Number</label><input id="fphone" type="tel" placeholder="Your mobile number" required></div>
